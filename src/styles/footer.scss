@@ -1,0 +1,97 @@
+@use 'variaveis';
+
+footer {
+    width: 100%;
+    color: variaveis.$color-neutral-40;
+    position: absolute;
+    background-color: variaveis.$color-neutral-0;
+    z-index: 999; /* Para garantir que o rodapé esteja sempre acima do conteúdo */
+    padding: 1.5rem 2.0rem;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: variaveis.$color-neutral-0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1.5rem 2.0rem;
+    box-shadow: 3px 0px 0px variaveis.$color-boxshadow;
+    justify-content: center;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: variaveis.$color-neutral-40;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.7;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #c12f76, #c58326);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#github .github-icon {
+    font-size: 2.5rem; /* Aumenta o tamanho do ícone do GitHub */
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: variaveis.$color-neutral-30;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    color: variaveis.$color-neutral-40;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: variaveis.$color-neutral-0;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}

@@ -1,0 +1,72 @@
+@use 'variaveis';
+
+.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: variaveis.$color-neutral-0;
+    padding: 40px 0px 40px 1%;
+    box-shadow: 3px 0 0 #ff0077;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu-lateral:hover {
+    width: 300px;
+    transition: 0.5s;
+}
+
+.menu-lateral:not(:hover) {
+    transition: 0.5s;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 16px;
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    height: 100%;
+    line-height: 40px;
+    padding: 0;
+}
+
+ul li .ativo {
+    display: none;
+}
+
+ul li.item-menu:hover {
+    background: #ff0077;
+    transition: 0.5s;
+}
+
+ul li.item-menu:not(:hover) {
+    transition: 0.5s;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}

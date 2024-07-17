@@ -1,0 +1,94 @@
+@use 'header';
+@use 'footer';
+@use 'menu-lateral';
+@use 'sec-home';
+@use 'variaveis';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .cabecalho-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 60px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .padaria {
+        margin-left: 60px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .cabecalho-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 80px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .padaria {
+        margin-left: 80px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .menu-lateral {
+        width: 60px;
+        height: 100%;
+        background-color: variaveis.$color-neutral-0;
+        padding: 40px 0px 40px 1%;
+        box-shadow: 3px 0 0 #ff0077;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 1000;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    .cabecalho-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

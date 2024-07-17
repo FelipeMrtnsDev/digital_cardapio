@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+.background-container {
+    background-color: variaveis.$color-neutral-0;
+    box-shadow: 0 3px 0 variaveis.$color-boxshadow;
+}
+
+.cabecalho{
+    width: 100%;
+}
+
+.cabecalho-content{
+    color: variaveis.$color-neutral-40;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 2.0rem;
+    margin-left: 100px;
+}
+
+.accordion-item {
+    align-items: center;
+    border: none;
+    border-bottom: 10px solid #aeaeae;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; /* Defina a largura máxima do acordeão conforme necessário */
+    overflow-y: auto; /* Adiciona rolagem vertical */
+    max-height: 500px; /* Define a altura máxima do acordeão com rolagem */
+}

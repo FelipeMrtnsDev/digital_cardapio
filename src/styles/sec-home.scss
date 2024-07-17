@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.secao-home {
+    min-height: 100vh;
+}
+
+.padaria {
+    max-width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.coxinhas-h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    color: variaveis.$color-neutral-0;
+    border-bottom: 2px solid variaveis.$color-boxshadow;
+    padding: 16px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__item {
+        max-width: 50%;
+        margin: 0 auto;
+
+        &__desc {
+            margin-bottom: 40px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
+.old-price {
+    color: red;
+}
+
+.new-price {
+    color: green;
+}
